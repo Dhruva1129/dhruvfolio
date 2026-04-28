@@ -14,7 +14,7 @@
     <link rel="shortcut icon" href="assets/favicons/profile.png">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#a789d4">
+    <meta name="theme-color" content="#1292EE">
 
     <!--=============== BOXICONS ===============-->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
@@ -34,45 +34,45 @@
         <nav class="nav container">
             <a href="#" class="nav__logo">Dhruvateja Amancha</a>
 
-            <div class="nav__menu">
-                <ul class="nav__list">
-                    <li class="nav__item ">
-                        <a href="#home" class="nav__link">
-                            <i class='bx bx-home'></i>
-                        </a>
-                    </li>
-
-                    <li class="nav__item ">
-                        <a href="#about" class="nav__link">
-                            <i class='bx bx-user'></i>
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#skills" class="nav__link">
-                            <i class='bx bx-book'></i>
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#work" class="nav__link">
-                            <i class='bx bx-briefcase-alt-2'></i>
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">
-                            <i class='bx bx-message-square-dots'></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
             <!--=============== theme change button ===============-->
             <i class='bx bx-moon change-theme change-theme-button' id="theme-button"></i>
 
         </nav>
     </header>
+
+    <div class="nav__menu">
+        <ul class="nav__list">
+            <li class="nav__item ">
+                <a href="#home" class="nav__link">
+                    <i class='bx bx-home'></i>
+                </a>
+            </li>
+
+            <li class="nav__item ">
+                <a href="#about" class="nav__link">
+                    <i class='bx bx-user'></i>
+                </a>
+            </li>
+
+            <li class="nav__item">
+                <a href="#skills" class="nav__link">
+                    <i class='bx bx-book'></i>
+                </a>
+            </li>
+
+            <li class="nav__item">
+                <a href="#work" class="nav__link">
+                    <i class='bx bx-briefcase-alt-2'></i>
+                </a>
+            </li>
+
+            <li class="nav__item">
+                <a href="#contact" class="nav__link">
+                    <i class='bx bx-message-square-dots'></i>
+                </a>
+            </li>
+        </ul>
+    </div>
 
     <!--=============== MAIN ===============-->
     <main class="main">
@@ -142,11 +142,11 @@
                             <h3 class="about__title">Completed</h3>
                             <span class="about__subtitle">10+ Projects</span>
                         </div>
-                        <div class="about__box">
+                        <!-- <div class="about__box">
                             <i class='bx bx-support about__icon'></i>
                             <h3 class="about__title">Accessible</h3>
                             <span class="about__subtitle">Online 24/7</span>
-                        </div>
+                        </div> -->
                     </div>
 
                     <p class="about__description">
@@ -326,41 +326,13 @@
                     <div class="testimonial__short">
                         <p class="testimonial__description">
                             Currently working as a Software Developer Intern at Lucid Data Hub, contributing to the
-                            development and enhancement of enterprise data platform solutions. My role involves
-                            full-stack development with a focus on building scalable APIs, modern UI components, and
-                            integrating Generative AI capabilities into the product.
+                            development and enhancement of enterprise data platform solutions.
                         </p>
                     </div>
-                    <div class="testimonial__more"
-                        style="max-height:0;overflow:hidden;transition:max-height 0.6s cubic-bezier(0.4,0,0.2,1),padding 0.6s;">
-                        <p class="testimonial__description">
-                            I work extensively with React.js to develop interactive and user-friendly frontend modules,
-                            improving the overall user experience of the Lucid Data Hub platform. On the backend, I
-                            design and implement RESTful APIs using Python FastAPI, ensuring high performance, security,
-                            and maintainability. I am actively involved in writing optimized API endpoints, handling
-                            business logic, and integrating them with frontend workflows.
-                        </p><br>
-                        <p class="testimonial__description">
-                            A key part of my internship is working with Generative AI APIs, where I explore and
-                            implement AI-driven features such as intelligent data processing, automation, and content
-                            generation within the platform. I collaborate with senior developers and product teams to
-                            enhance existing features, debug issues, and contribute to new product enhancements aligned
-                            with real-world client requirements.
-                        </p><br>
-                        <p class="testimonial__description">
-                            Through this role, I have gained hands-on experience in:<br><br>
 
-                            · Building and consuming APIs using FastAPI and Python<br>
-                            · Developing dynamic UI components with React.js<br>
-                            · Integrating GenAI models and services into applications<br>
-                            · Understanding enterprise product architecture and Agile workflows<br>
-                            · Debugging, testing, and improving production-level code<br><br>
-
-                            This internship has strengthened my problem-solving skills and given me practical exposure
-                            to modern software development practices in a real industry environment
-                        </p>
-                    </div>
-                    <button class="see-more-btn" onclick="toggleLucidCard(this)">See More</button>
+                    <span class="experience__button">
+                        See More <i class='bx bx-right-arrow services__icon'></i>
+                    </span>
                 </div>
                 <div class="testimonial__card">
                     <img src="assets/img/1696913393804.jpeg" alt="" class="testimonial__img">
@@ -373,36 +345,13 @@
                         <p class="testimonial__description">
                             As an SDE Intern at Bluestock Fintech, I gained hands-on experience in full-stack
                             application development, working with modern web technologies such as React.js, Node.js,
-                            SQL, and RESTful APIs. I contributed to building and enhancing fintech-based web
-                            applications, focusing on performance, usability, and seamless user experience.
+                            SQL, and RESTful APIs.
                         </p>
                     </div>
-                    <div class="testimonial__more"
-                        style="max-height:0;overflow:hidden;transition:max-height 0.6s cubic-bezier(0.4,0,0.2,1),padding 0.6s;">
-                        <p class="testimonial__description">
-                            I was involved in developing responsive frontend components using React.js, implementing
-                            dynamic UI features, and integrating them with backend services. On the server side, I
-                            worked with Node.js to build and optimize RESTful APIs, handle business logic, and manage
-                            database interactions using SQL.
-                        </p><br>
-                        <p class="testimonial__description">
-                            My role also included debugging existing modules, writing clean and reusable code, and
-                            collaborating with the development team to deliver features aligned with product
-                            requirements. This internship helped me understand real-world software development
-                            workflows, version control practices, and end-to-end application architecture.
-                        </p><br>
-                        <p class="testimonial__description">
-                            <b>Key contributions and learnings include:</b><br><br>
-                            · Developed interactive UI modules using React.js to enhance user engagement<br>
-                            · Built and tested RESTful APIs using Node.js<br>
-                            · Worked with SQL databases for data storage and retrieval<br>
-                            · Debugged and optimized existing code for better performance<br>
-                            · Collaborated in an Agile environment to deliver fintech solutions<br><br>
-                            This experience strengthened my foundation in full-stack development and gave me exposure to
-                            the fintech domain and industry-level coding practices.
-                        </p>
-                    </div>
-                    <button class="see-more-btn" onclick="toggleBluestockCard(this)">See More</button>
+
+                    <span class="experience__button">
+                        See More <i class='bx bx-right-arrow services__icon'></i>
+                    </span>
                 </div>
                 <div class="testimonial__card">
                     <img src="assets/img/ey.png" alt="" class="testimonial__img">
@@ -413,39 +362,82 @@
                     <p class="testimonial__description">Dec 2024 - Jan 2025 · 2 months</p>
                     <div class="testimonial__short">
                         <p class="testimonial__description">
-                            During my internship at EY GDS Next Gen in collaboration with Edunet Foundation, I worked as
-                            a MERN Stack Developer and developed a full-stack eCommerce web application using React.js,
-                            Node.js, MongoDB, and JWT authentication. I was responsible for designing and implementing
-                            responsive user interfaces, developing RESTful APIs, and integrating frontend components
-                            with backend services.
+                            During my internship at EY GDS Next Gen, I worked as a MERN Stack Developer and developed a
+                            full-stack eCommerce web application using React.js, Node.js, MongoDB, and JWT
+                            authentication.
                         </p>
                     </div>
-                    <div class="testimonial__more"
-                        style="max-height:0;overflow:hidden;transition:max-height 0.6s cubic-bezier(0.4,0,0.2,1),padding 0.6s;">
-                        <p class="testimonial__description">
-                            I implemented secure authentication and authorization mechanisms using JWT, enabling
-                            protected routes and role-based access control.
-                        </p>
-                        <p class="testimonial__description">
-                            I worked on core eCommerce functionalities such as product listing, cart management, order
-                            processing, and user management, while following industry best practices for code structure
-                            and performance optimization.
-                        </p>
-                        <p class="testimonial__description">
-                            This internship helped me gain hands-on experience in end-to-end application development,
-                            database schema design, API testing, debugging, and version control using Git. I also
-                            improved my problem-solving skills and understanding of real-world software development
-                            workflows in an Agile environment.
-                        </p>
-                    </div>
-                    <button class="see-more-btn" onclick="toggleEyCard(this)">See More</button>
+
+                    <span class="experience__button">
+                        See More <i class='bx bx-right-arrow services__icon'></i>
+                    </span>
                 </div>
 
 
-                <!-- </div> -->
-                <!-- <div class="swiper-pagination"></div> -->
             </div>
 
+            <div class="services__modal experience__modal">
+                <div class="services__modal-content">
+                    <i class='bx bx-x services__modal-close'></i>
+
+                    <h3 class="services__modal-title">Lucid Data Hub</h3>
+                    <h4 class="testimonial__name" style="text-align: center; margin-bottom: 1rem;">Software Developer
+                        Intern</h4>
+
+                    <p class="services__modal-description" style="text-align: left;">
+                        My role involves full-stack development with a focus on building scalable APIs, modern UI
+                        components, and integrating Generative AI capabilities into the product.<br><br>
+
+                        · Building and consuming APIs using FastAPI and Python<br>
+                        · Developing dynamic UI components with React.js<br>
+                        · Integrating GenAI models and services into applications<br>
+                        · Understanding enterprise product architecture and Agile workflows<br>
+                        · Debugging, testing, and improving production-level code
+                    </p>
+                </div>
+            </div>
+
+            <div class="services__modal experience__modal">
+                <div class="services__modal-content">
+                    <i class='bx bx-x services__modal-close'></i>
+
+                    <h3 class="services__modal-title">Bluestock™🔺</h3>
+                    <h4 class="testimonial__name" style="text-align: center; margin-bottom: 1rem;">SDE Intern</h4>
+
+                    <p class="services__modal-description" style="text-align: left;">
+                        <b>Key contributions and learnings:</b><br><br>
+                        · Developed interactive UI modules using React.js to enhance user engagement<br>
+                        · Built and tested RESTful APIs using Node.js<br>
+                        · Worked with SQL databases for data storage and retrieval<br>
+                        · Debugged and optimized existing code for better performance<br>
+                        · Collaborated in an Agile environment to deliver fintech solutions<br><br>
+
+                        I was involved in developing responsive frontend components using React.js, implementing
+                        dynamic UI features, and integrating them with backend services. On the server side, I
+                        worked with Node.js to build and optimize RESTful APIs.
+                    </p>
+                </div>
+            </div>
+
+            <div class="services__modal experience__modal">
+                <div class="services__modal-content">
+                    <i class='bx bx-x services__modal-close'></i>
+
+                    <h3 class="services__modal-title">EY GDS Next Gen</h3>
+                    <h4 class="testimonial__name" style="text-align: center; margin-bottom: 1rem;">MERN Stack Developer
+                    </h4>
+
+                    <p class="services__modal-description" style="text-align: left;">
+                        I was responsible for designing and implementing responsive user interfaces, developing
+                        RESTful APIs, and integrating frontend components with backend services.<br><br>
+
+                        · Implemented secure authentication using JWT<br>
+                        · Worked on core eCommerce functionalities: cart, orders, product listings<br>
+                        · Gained experience in database schema design and API testing<br>
+                        · Followed industry best practices for code structure and performance
+                    </p>
+                </div>
+            </div>
         </section>
 
         <!--=============== SERVICES ===============-->
@@ -609,16 +601,20 @@
 
             <div class="work__container container grid">
                 <div class="work__card mix web movil">
-                    <img src="assets/img/mediscan.png" alt="dairy" class="work__img">
+                    <div class="work__img-container">
+                        <img src="assets/img/mediscan.png" alt="dairy" class="work__img">
+                    </div>
 
                     <h3 class="work__title">MediScan - Medical Report Summary with Chat Application</h3>
 
-                    <a class="button" href="https://github.com/Dhruva1129/MediScan" class="work__button">
-                        GitHub <i class='bx bx-right-arrow work__icon'></i>
-                    </a>
-                    <a class="button" href="#" class="work__button">
-                        view <i class='bx bx-right-arrow work__icon'></i>
-                    </a>
+                    <div class="work__button-container">
+                        <a href="https://github.com/Dhruva1129/MediScan" class="work__button">
+                            GitHub <i class='bx bx-right-arrow work__icon'></i>
+                        </a>
+                        <a href="https://mediscan-chi.vercel.app/" class="work__button">
+                            View <i class='bx bx-right-arrow work__icon'></i>
+                        </a>
+                    </div>
                 </div>
 
                 <!-- <div class="work__card mix web movil">
@@ -632,59 +628,79 @@
                 </div> -->
 
                 <div class="work__card mix web">
-                    <img src="assets/img/Ecommerce.jpeg" alt="" class="work__img">
+                    <div class="work__img-container">
+                        <img src="assets/img/Ecommerce.jpeg" alt="" class="work__img">
+                    </div>
 
                     <h3 class="work__title">Electronic's E-Commerce</h3>
 
-                    <a class="button" href="https://github.com/Dhruva1129/ey-final-project" class="work__button">
-                        GitHub <i class='bx bx-right-arrow work__icon'></i>
-                    </a>
-                    <a class="button" href="https://ey-final-project-vn8o.vercel.app/" class="work__button">
-                        View <i class='bx bx-right-arrow work__icon'></i>
-                    </a>
+                    <div class="work__button-container">
+                        <a href="https://github.com/Dhruva1129/ey-final-project" class="work__button">
+                            GitHub <i class='bx bx-right-arrow work__icon'></i>
+                        </a>
+                        <a href="https://ey-final-project-vn8o.vercel.app/" class="work__button">
+                            View <i class='bx bx-right-arrow work__icon'></i>
+                        </a>
+                    </div>
                 </div>
 
                 <div class="work__card mix design">
-                    <img src="assets/img/text-enh.jpeg" alt="" class="work__img">
+                    <div class="work__img-container">
+                        <img src="assets/img/text-enh.jpeg" alt="" class="work__img">
+                    </div>
 
                     <h3 class="work__title">Text Enhancer</h3>
 
-                    <a class="button" href="https://github.com/Dhruva1129/ai-text-enhancer" class="work__button">
-                        GitHub <i class='bx bx-right-arrow work__icon'></i>
-                    </a>
-                    <a class="button" href="https://text-enhancer-ten.vercel.app/" class="work__button">
-                        View <i class='bx bx-right-arrow work__icon'></i>
-                    </a>
+                    <div class="work__button-container">
+                        <a href="https://github.com/Dhruva1129/ai-text-enhancer" class="work__button">
+                            GitHub <i class='bx bx-right-arrow work__icon'></i>
+                        </a>
+                        <a href="https://text-enhancer-ten.vercel.app/" class="work__button">
+                            View <i class='bx bx-right-arrow work__icon'></i>
+                        </a>
+                    </div>
                 </div>
 
                 <div class="work__card mix web movil">
-                    <img src="assets/img/shoe.jpg" alt="" class="work__img">
+                    <div class="work__img-container">
+                        <img src="assets/img/shoe.jpg" alt="" class="work__img">
+                    </div>
 
                     <h3 class="work__title">E-Commerce Shoe Website</h3>
 
-                    <a href="https://dhruva1129.github.io/real-time-project/index.html" class="work__button">
-                        GitHub <i class='bx bx-right-arrow work__icon'></i>
-                    </a>
+                    <div class="work__button-container">
+                        <a href="https://dhruva1129.github.io/real-time-project/index.html" class="work__button">
+                            GitHub <i class='bx bx-right-arrow work__icon'></i>
+                        </a>
+                    </div>
                 </div>
 
                 <div class="work__card mix web movil">
-                    <img src="assets/img/temp.jpg" alt="dairy" class="work__img">
+                    <div class="work__img-container">
+                        <img src="assets/img/temp.jpg" alt="dairy" class="work__img">
+                    </div>
 
                     <h3 class="work__title">Temperature Converter</h3>
 
-                    <a href="https://github.com/Dhruva1129/OIBSIP/tree/main/task-3" class="work__button">
-                        GitHub <i class='bx bx-right-arrow work__icon'></i>
-                    </a>
+                    <div class="work__button-container">
+                        <a href="https://github.com/Dhruva1129/OIBSIP/tree/main/task-3" class="work__button">
+                            GitHub <i class='bx bx-right-arrow work__icon'></i>
+                        </a>
+                    </div>
                 </div>
 
                 <div class="work__card mix movil">
-                    <img src="assets/img/portfolio.jpg" alt="" class="work__img">
+                    <div class="work__img-container">
+                        <img src="assets/img/portfolio.jpg" alt="" class="work__img">
+                    </div>
 
                     <h3 class="work__title">Portfolio</h3>
 
-                    <a href="#" class="work__button">
-                        GitHub <i class='bx bx-right-arrow work__icon'></i>
-                    </a>
+                    <div class="work__button-container">
+                        <a href="#" class="work__button">
+                            GitHub <i class='bx bx-right-arrow work__icon'></i>
+                        </a>
+                    </div>
                 </div>
 
                 <!-- <div class="work__card mix movil">
@@ -949,74 +965,7 @@
     </style>
     <script src="assets/js/main.js"></script>
     <script>
-        function toggleLucidCard(btn) {
-            var card = document.getElementById('lucid-card');
-            var more = card.querySelector('.testimonial__more');
-            if (!more.classList.contains('expanded')) {
-                more.style.display = 'block';
-                let scrollHeight = more.scrollHeight;
-                more.style.maxHeight = scrollHeight + 'px';
-                more.style.paddingTop = '10px';
-                more.classList.add('expanded');
-                btn.textContent = 'See Less';
-            } else {
-                more.style.maxHeight = '0';
-                more.style.paddingTop = '0';
-                btn.textContent = 'See More';
-                more.addEventListener('transitionend', function handler() {
-                    more.style.display = 'none';
-                    more.classList.remove('expanded');
-                    more.removeEventListener('transitionend', handler);
-                });
-                card.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            }
-        }
-
-        function toggleBluestockCard(btn) {
-            var card = btn.closest('.testimonial__card');
-            var more = card.querySelector('.testimonial__more');
-            if (!more.classList.contains('expanded')) {
-                more.style.display = 'block';
-                let scrollHeight = more.scrollHeight;
-                more.style.maxHeight = scrollHeight + 'px';
-                more.style.paddingTop = '10px';
-                more.classList.add('expanded');
-                btn.textContent = 'See Less';
-            } else {
-                more.style.maxHeight = '0';
-                more.style.paddingTop = '0';
-                btn.textContent = 'See More';
-                more.addEventListener('transitionend', function handler() {
-                    more.style.display = 'none';
-                    more.classList.remove('expanded');
-                    more.removeEventListener('transitionend', handler);
-                });
-                card.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            }
-        }
-
-        function toggleEyCard(btn) {
-            var card = btn.closest('.testimonial__card');
-            var more = card.querySelector('.testimonial__more');
-            if (!more.classList.contains('expanded')) {
-                more.style.display = 'block';
-                let scrollHeight = more.scrollHeight;
-                more.style.maxHeight = scrollHeight + 'px';
-                more.style.paddingTop = '10px';
-                more.classList.add('expanded');
-                btn.textContent = 'See Less';
-            } else {
-                more.style.maxHeight = '0';
-                more.style.paddingTop = '0';
-                btn.textContent = 'See More';
-                more.addEventListener('transitionend', function handler() {
-                    more.style.display = 'none';
-                    more.classList.remove('expanded');
-                    more.removeEventListener('transitionend', handler);
-                });
-                card.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            }
-        }
+    </script>
     </script>
 </body>
 
