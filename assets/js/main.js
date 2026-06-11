@@ -7,79 +7,6 @@ function scrollHeader() {
 }
 window.addEventListener("scroll", scrollHeader);
 
-/*=============== SERVICES MODAL ===============*/
-const modalViews = document.querySelectorAll(".services__modal"),
-  modalBtns = document.querySelectorAll(".services__button, .experience__button"),
-  modalClose = document.querySelectorAll(".services__modal-close");
-
-let modal = function (modalClick) {
-  modalViews[modalClick].classList.add("active-modal");
-};
-
-modalBtns.forEach((mb, i) => {
-  mb.addEventListener("click", () => {
-    modal(i);
-  });
-});
-
-modalClose.forEach((mc) => {
-  mc.addEventListener("click", () => {
-    modalViews.forEach((mv) => {
-      mv.classList.remove("active-modal");
-    });
-  });
-});
-
-/*=============== MIXITUP FILTER PORTFOLIO ===============*/
-
-let mixer = mixitup(".work__container", {
-  selectors: {
-    target: ".work__card",
-  },
-  animation: {
-    duration: 300,
-  },
-});
-
-/* Link active work */
-const workLinks = document.querySelectorAll(".work__item");
-
-function activeWork(workLink) {
-  workLinks.forEach((wl) => {
-    wl.classList.remove("active-work");
-  });
-  workLink.classList.add("active-work");
-}
-
-workLinks.forEach((wl) => {
-  wl.addEventListener("click", () => {
-    activeWork(wl);
-  });
-});
-
-/*=============== SWIPER TESTIMONIAL ===============*/
-
-let swiperTestimonial = new Swiper(".testimonial__container", {
-  spaceBetween: 24,
-  loop: true,
-  grabCursor: true,
-
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-
-  breakpoints: {
-    576: {
-      slidesPerView: 2,
-    },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 48,
-    },
-  },
-});
-
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
 const sections = document.querySelectorAll("section[id]");
@@ -93,13 +20,11 @@ function scrollActive() {
       sectionId = current.getAttribute("id");
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      document
-        .querySelector(".nav__menu a[href*=" + sectionId + "]")
-        .classList.add("active-link");
+      const link = document.querySelector(".nav__menu a[href*=" + sectionId + "]");
+      if (link) link.classList.add("active-link");
     } else {
-      document
-        .querySelector(".nav__menu a[href*=" + sectionId + "]")
-        .classList.remove("active-link");
+      const link = document.querySelector(".nav__menu a[href*=" + sectionId + "]");
+      if (link) link.classList.remove("active-link");
     }
   });
 }
@@ -181,18 +106,27 @@ sr.reveal(`.about__data, .about__description, .about__button-contact`, {
   distance: "30px",
 });
 
-sr.reveal(`.skills__content`, {
+sr.reveal(`.skills__row`, {
+  delay: 100,
+  scale: 0.9,
+  origin: "bottom",
+  distance: "30px",
+  interval: 100,
+});
+
+sr.reveal(`.experience__single-card`, {
   delay: 100,
   scale: 0.9,
   origin: "bottom",
   distance: "30px",
 });
 
-sr.reveal(`.services__title, services__button`, {
+sr.reveal(`.experience__highlight-item`, {
   delay: 100,
   scale: 0.9,
-  origin: "top",
+  origin: "left",
   distance: "30px",
+  interval: 150,
 });
 
 sr.reveal(`.work__card`, {
@@ -200,13 +134,15 @@ sr.reveal(`.work__card`, {
   scale: 0.9,
   origin: "bottom",
   distance: "30px",
+  interval: 150,
 });
 
-sr.reveal(`.testimonial__container`, {
+sr.reveal(`.education__card`, {
   delay: 100,
   scale: 0.9,
   origin: "bottom",
   distance: "30px",
+  interval: 150,
 });
 
 sr.reveal(`.contact__info, .contact__title-info`, {
@@ -220,6 +156,20 @@ sr.reveal(`.contact__form, .contact__title-form`, {
   delay: 100,
   scale: 0.9,
   origin: "right",
+  distance: "30px",
+});
+
+sr.reveal(`.contact__looking-for`, {
+  delay: 100,
+  scale: 0.9,
+  origin: "top",
+  distance: "30px",
+});
+
+sr.reveal(`.contact__cta-buttons`, {
+  delay: 200,
+  scale: 0.9,
+  origin: "bottom",
   distance: "30px",
 });
 

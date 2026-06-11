@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--=============== SEO META ===============-->
+    <meta name="description" content="Dhruvateja Amancha — Full Stack AI Engineer. I build AI-powered products that ship to production. React, FastAPI, Azure OpenAI, RAG pipelines, and more.">
+    <meta name="keywords" content="Full Stack AI Engineer, Dhruvateja Amancha, React, FastAPI, Azure OpenAI, RAG, Portfolio">
+    <meta name="author" content="Dhruvateja Amancha">
+
     <!--=============== FAVICON ===============-->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/avatar.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/avatar.png">
@@ -25,10 +30,11 @@
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <title> Dhruv's Portfolio </title>
+    <title>Dhruvateja Amancha — Full Stack AI Engineer</title>
 </head>
 
 <body>
+    <canvas id="canvas-bg"></canvas>
     <!--=============== HEADER ===============-->
     <header class="header" id="header">
         <nav class="nav container">
@@ -55,14 +61,20 @@
             </li>
 
             <li class="nav__item">
-                <a href="#skills" class="nav__link">
-                    <i class='bx bx-book'></i>
+                <a href="#experience" class="nav__link">
+                    <i class='bx bx-briefcase-alt-2'></i>
                 </a>
             </li>
 
             <li class="nav__item">
                 <a href="#work" class="nav__link">
-                    <i class='bx bx-briefcase-alt-2'></i>
+                    <i class='bx bx-folder-open'></i>
+                </a>
+            </li>
+
+            <li class="nav__item">
+                <a href="#skills" class="nav__link">
+                    <i class='bx bx-book'></i>
                 </a>
             </li>
 
@@ -80,35 +92,40 @@
         <section class="home section" id="home">
             <div class="home__container container grid">
                 <div class="home__data">
-                    <span class="home__greeting">Hello, I'm</span>
+                    <div class="home__status-badge">
+                        <span class="status-dot"></span> Open to full-time roles
+                    </div>
                     <h1 class="home__name">Dhruvateja Amancha</h1>
-                    <h3 class="home__education">Aspiring Full Stack Developer</h3>
+                    <h3 class="home__education">Full Stack AI Engineer</h3>
+                    <p class="home__tagline">
+                        I build AI-powered products that ship to production —<br>
+                        not just demos that live in a GitHub repo.
+                    </p>
 
                     <div class="home__button">
+                        <a href="#work" class="button">
+                            View Projects <i class='bx bx-right-arrow'></i>
+                        </a>
+
                         <a download=""
                             href="https://drive.google.com/file/d/1ZosELv6BdxQKcBqhWka-uY1Ns5RWkRlN/view?usp=sharing"
                             class="button button--ghost">
-                            Download Resume
+                            Download Resume <i class='bx bx-download'></i>
                         </a>
-
-                        <a href="#about" class="button">About</a>
                     </div>
                 </div>
 
                 <div class="home__handle">
-                    <img src="assets/img/home_profile2.jpeg" alt="" class="home__img">
+                    <img src="assets/img/home_profile2.jpeg" alt="Dhruvateja Amancha" class="home__img">
                 </div>
 
                 <div class="home__social">
-                    <a href="https://www.linkedin.com/in/dhruvateja-amancha-80a24527b/" target="_blank"
+                    <a href="https://www.linkedin.com/in/dhruvateja-amancha/" target="_blank"
                         class="home__social-link">
                         <i class='bx bxl-linkedin'></i>
                     </a>
                     <a href="https://github.com/Dhruva1129" target="_blank" class="home__social-link">
                         <i class='bx bxl-github'></i>
-                    </a>
-                    <a href="https://www.instagram.com/dhruvateja_/" target="_blank" class="home__social-link">
-                        <i class='bx bxl-instagram'></i>
                     </a>
                     <a href="https://x.com/Dhruvateja_A" target="_blank" class="home__social-link">
                         <i class='bx bxl-twitter'></i>
@@ -124,649 +141,398 @@
 
         <!--=============== ABOUT ===============-->
         <section class="about section" id="about">
-            <span class="section__subtitle">My Intro</span>
+            <span class="section__subtitle">Who I Am</span>
             <h2 class="section__title">About Me</h2>
 
             <div class="about__container container grid">
-                <img src="assets/img/WhatsApp Image 2026-01-18 at 3.28.27 PM.jpeg" alt="" class="about__img">
+                <img src="assets/img/WhatsApp Image 2026-01-18 at 3.28.27 PM.jpeg" alt="Dhruvateja Amancha" class="about__img">
 
                 <div class="about__data">
                     <div class="about__info">
                         <div class="about__box">
                             <i class='bx bx-award about__icon'></i>
                             <h3 class="about__title">Experience</h3>
-                            <span class="about__subtitle">Fresh start, eager learner</span>
+                            <span class="about__subtitle">1+ Year Full-Time</span>
                         </div>
                         <div class="about__box">
                             <i class='bx bx-briefcase-alt about__icon'></i>
-                            <h3 class="about__title">Completed</h3>
-                            <span class="about__subtitle">10+ Projects</span>
+                            <h3 class="about__title">Shipped</h3>
+                            <span class="about__subtitle">Azure Marketplace</span>
                         </div>
-                        <!-- <div class="about__box">
-                            <i class='bx bx-support about__icon'></i>
-                            <h3 class="about__title">Accessible</h3>
-                            <span class="about__subtitle">Online 24/7</span>
-                        </div> -->
+                        <div class="about__box">
+                            <i class='bx bx-buildings about__icon'></i>
+                            <h3 class="about__title">Clients</h3>
+                            <span class="about__subtitle">Fortune 500</span>
+                        </div>
                     </div>
 
                     <p class="about__description">
-                        I am Recently Graduated a Computer Science (AI & ML) student with a strong interest in building
-                        scalable
-                        and user-focused software applications. I enjoy working across both frontend and backend, and
-                        have hands-on experience developing full-stack projects using technologies like ReactJS,
-                        FastAPI.<br><br>
+                        I'm a Full Stack AI Engineer with 1+ year of full-time remote experience building production-grade, AI-powered applications.<br><br>
 
-                        I have worked on projects involving AI and real-world problem solving, such as Ecommerce
-                        Application,
-                        and Medical Report Summarization, where I focused on performance, usability, and clean system
-                        design. I am particularly interested in learning how systems work at scale and continuously
-                        improving my problem-solving skills through coding and development.<br><br>
+                        I joined Lucid Data+AI Hub (Canada) during my final year of B.Tech and grew from building individual components to owning full platform features end-to-end. I've shipped a product on Azure Marketplace, built systems serving Fortune 500 companies, and delivered AI tools that real users interact with daily.<br><br>
 
-                        I am a self-motivated learner who enjoys exploring new technologies, collaborating with teams,
-                        and turning ideas into practical solutions. My goal is to grow as a software engineer and
-                        contribute to building impactful products.
+                        My stack lives at the intersection of modern full-stack development and AI engineering — React + Vite frontends, FastAPI backends, Azure OpenAI, RAG pipelines, vector databases, and real-time WebSocket systems.<br><br>
+
+                        What I care about: building things that are actually useful. Not AI wrappers. Not CRUD apps with a chatbot bolted on. Real systems, real users, real impact.<br><br>
+
+                        I'm a May 2026 B.Tech graduate in Computer Science (AI & ML) from Vaagdevi College of Engineering, and I'm actively looking for full-time roles where I can keep building at this level.
                     </p>
+
+                    <div class="about__core-stack">
+                        <h4 class="about__stack-title">🛠 Core Stack</h4>
+                        <div class="about__stack-tags">
+                            <span class="stack-tag">Python</span>
+                            <span class="stack-tag">FastAPI</span>
+                            <span class="stack-tag">React.js</span>
+                            <span class="stack-tag">Azure OpenAI</span>
+                            <span class="stack-tag">RAG</span>
+                            <span class="stack-tag">PostgreSQL</span>
+                            <span class="stack-tag">CosmosDB</span>
+                            <span class="stack-tag">ChromaDB</span>
+                            <span class="stack-tag">WebSocket</span>
+                            <span class="stack-tag">Docker</span>
+                            <span class="stack-tag">CI/CD</span>
+                            <span class="stack-tag">Microsoft Fabric</span>
+                            <span class="stack-tag">Databricks</span>
+                            <span class="stack-tag">Snowflake</span>
+                        </div>
+                    </div>
 
                     <a href="#contact" class="button about__button-contact">Contact Me</a>
                 </div>
             </div>
         </section>
 
-        <!--=============== SKILLS ===============-->
-        <section class="skills section" id="skills">
-            <span class="section__subtitle">My Abilities</span>
-            <h2 class="section__title">Skills</h2>
-
-            <div class="skills__container container grid">
-                <div class="skills__content">
-                    <h3 class="skills__title">Frontend Development</h3>
-
-                    <div class="skills__box">
-                        <div class="skills__group">
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">HTML</h3>
-                                    <span class="skills__level">Advanced</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">CSS</h3>
-                                    <span class="skills__level">Advanced</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">Javascript</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="skills__group">
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">Bootstrap</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">Git</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">React</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skills__content">
-                    <h3 class="skills__title">Backend Development</h3>
-
-                    <div class="skills__box">
-                        <div class="skills__group">
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">Python</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">FastAPI</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">MySQL</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="skills__group">
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">PostgreSQL</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
-
-                            <!-- <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">Node JS</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div> -->
-
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">MongoDB</h3>
-                                    <span class="skills__level">Basic</span>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-        </section>
-
-        <!--=============== TESTIMONIALS ===============-->
-        <section class="testimonial section">
-            <!-- <span class="section__subtitle">My clients say</span> -->
-            <span class="section__subtitle">My Experience</span>
+        <!--=============== EXPERIENCE ===============-->
+        <section class="testimonial section" id="experience">
+            <span class="section__subtitle">Where I've Worked</span>
             <h2 class="section__title">Experience</h2>
 
-            <div class="testimonial__container">
-                <!-- <div class="swiper-wrapper"> -->
-                <div class="testimonial__card" id="lucid-card">
-                    <img src="assets/img/LUCID_Blue Logo.png" alt="" class="testimonial__img"
-                        style="width:140px;height:80px;object-fit:contain;">
-
-                    <h3 class="testimonial__name">Lucid Data Hub</h3>
-                    <p class="testimonial__description">Internship</p>
-                    <p class="testimonial__description">Sep 2025 – Present </p>
-                    <div class="testimonial__short">
-                        <p class="testimonial__description">
-                            Currently working as a Software Developer Intern at Lucid Data Hub, contributing to the
-                            development and enhancement of enterprise data platform solutions.
-                        </p>
-                    </div>
-
-                    <span class="experience__button">
-                        See More <i class='bx bx-right-arrow services__icon'></i>
-                    </span>
-                </div>
-                <div class="testimonial__card">
-                    <img src="assets/img/1696913393804.jpeg" alt="" class="testimonial__img">
-
-                    <h3 class="testimonial__name">Bluestock™🔺</h3>
-                    <h4 class="testimonial__name">SDE Intern</h4>
-                    <p class="testimonial__description">Internship</p>
-                    <p class="testimonial__description">Jan 2025 - Feb 2025 · 2 months</p>
-                    <div class="testimonial__short">
-                        <p class="testimonial__description">
-                            As an SDE Intern at Bluestock Fintech, I gained hands-on experience in full-stack
-                            application development, working with modern web technologies such as React.js, Node.js,
-                            SQL, and RESTful APIs.
-                        </p>
-                    </div>
-
-                    <span class="experience__button">
-                        See More <i class='bx bx-right-arrow services__icon'></i>
-                    </span>
-                </div>
-                <div class="testimonial__card">
-                    <img src="assets/img/ey.png" alt="" class="testimonial__img">
-
-                    <h3 class="testimonial__name">EY GDS Next Gen, Edunet Foundation</h3>
-                    <h4 class="testimonial__name">MERN Stack Developer</h4>
-                    <p class="testimonial__description">Internship</p>
-                    <p class="testimonial__description">Dec 2024 - Jan 2025 · 2 months</p>
-                    <div class="testimonial__short">
-                        <p class="testimonial__description">
-                            During my internship at EY GDS Next Gen, I worked as a MERN Stack Developer and developed a
-                            full-stack eCommerce web application using React.js, Node.js, MongoDB, and JWT
-                            authentication.
-                        </p>
-                    </div>
-
-                    <span class="experience__button">
-                        See More <i class='bx bx-right-arrow services__icon'></i>
-                    </span>
-                </div>
-
-
-            </div>
-
-            <div class="services__modal experience__modal">
-                <div class="services__modal-content">
-                    <i class='bx bx-x services__modal-close'></i>
-
-                    <h3 class="services__modal-title">Lucid Data Hub</h3>
-                    <h4 class="testimonial__name" style="text-align: center; margin-bottom: 1rem;">Software Developer
-                        Intern</h4>
-
-                    <p class="services__modal-description" style="text-align: left;">
-                        My role involves full-stack development with a focus on building scalable APIs, modern UI
-                        components, and integrating Generative AI capabilities into the product.<br><br>
-
-                        · Building and consuming APIs using FastAPI and Python<br>
-                        · Developing dynamic UI components with React.js<br>
-                        · Integrating GenAI models and services into applications<br>
-                        · Understanding enterprise product architecture and Agile workflows<br>
-                        · Debugging, testing, and improving production-level code
-                    </p>
-                </div>
-            </div>
-
-            <div class="services__modal experience__modal">
-                <div class="services__modal-content">
-                    <i class='bx bx-x services__modal-close'></i>
-
-                    <h3 class="services__modal-title">Bluestock™🔺</h3>
-                    <h4 class="testimonial__name" style="text-align: center; margin-bottom: 1rem;">SDE Intern</h4>
-
-                    <p class="services__modal-description" style="text-align: left;">
-                        <b>Key contributions and learnings:</b><br><br>
-                        · Developed interactive UI modules using React.js to enhance user engagement<br>
-                        · Built and tested RESTful APIs using Node.js<br>
-                        · Worked with SQL databases for data storage and retrieval<br>
-                        · Debugged and optimized existing code for better performance<br>
-                        · Collaborated in an Agile environment to deliver fintech solutions<br><br>
-
-                        I was involved in developing responsive frontend components using React.js, implementing
-                        dynamic UI features, and integrating them with backend services. On the server side, I
-                        worked with Node.js to build and optimize RESTful APIs.
-                    </p>
-                </div>
-            </div>
-
-            <div class="services__modal experience__modal">
-                <div class="services__modal-content">
-                    <i class='bx bx-x services__modal-close'></i>
-
-                    <h3 class="services__modal-title">EY GDS Next Gen</h3>
-                    <h4 class="testimonial__name" style="text-align: center; margin-bottom: 1rem;">MERN Stack Developer
-                    </h4>
-
-                    <p class="services__modal-description" style="text-align: left;">
-                        I was responsible for designing and implementing responsive user interfaces, developing
-                        RESTful APIs, and integrating frontend components with backend services.<br><br>
-
-                        · Implemented secure authentication using JWT<br>
-                        · Worked on core eCommerce functionalities: cart, orders, product listings<br>
-                        · Gained experience in database schema design and API testing<br>
-                        · Followed industry best practices for code structure and performance
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!--=============== SERVICES ===============-->
-        <section class="services section">
-            <span class="section__subtitle">My Skills</span>
-            <h2 class="section__title">What I Bring</h2>
-
-            <div class="services__container container grid">
-                <div class="services__card">
-                    <h3 class="services__title">Web Development</h3>
-
-                    <span class="services__button">
-                        See More <i class='bx bx-right-arrow services__icon'></i>
-                    </span>
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <i class='bx bx-x services__modal-close'></i>
-
-                            <h3 class="services__modal-title">Web Development</h3>
-
-                            <p class="services__modal-description">
-                                I build and design web applications using cutting-edge technologies to create seamless
-                                user experiences.
-                            </p>
-
-                            <ul class="services__modal-list">
-                                <li class="services__modal-item">
-                                    <i class='bx bx-check-circle'></i>
-                                    <p class="services__modal-info">
-                                        Frontend development with HTML, CSS, and JavaScript.
-                                    </p>
-                                </li>
-
-                                <li class="services__modal-item">
-                                    <i class='bx bx-check-circle'></i>
-                                    <p class="services__modal-info">
-                                        Backend development with Python, JavaScript and frameworks like Flask and
-                                        NodeJS.
-                                    </p>
-                                </li>
-
-                                <li class="services__modal-item">
-                                    <i class='bx bx-check-circle'></i>
-                                    <p class="services__modal-info">
-                                        Database management with MySQL and MongoDB.
-                                    </p>
-                                </li>
-                            </ul>
+            <div class="testimonial__container container">
+                <div class="experience__single-card">
+                    <div class="experience__header">
+                        <img src="assets/img/LUCID_Blue Logo.png" alt="Lucid Data+AI Hub"
+                            class="experience__company-logo">
+                        <div class="experience__header-info">
+                            <h3 class="experience__role">Full Stack AI Engineer</h3>
+                            <p class="experience__company">Lucid Data+AI Hub · Remote · Canada</p>
+                            <p class="experience__duration">July 2025 – Present · 1 Year</p>
                         </div>
                     </div>
-                </div>
 
-                <div class="services__card">
-                    <h3 class="services__title">AI & NLP Integration</h3>
+                    <p class="experience__summary">
+                        Full-time remote engineering role — built production products end-to-end alongside a small team.
+                    </p>
 
-                    <span class="services__button">
-                        See More <i class='bx bx-right-arrow services__icon'></i>
-                    </span>
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <i class='bx bx-x services__modal-close'></i>
-
-                            <h3 class="services__modal-title">AI & NLP Integration</h3>
-
-                            <p class="services__modal-description">
-                                I develop intelligent systems that leverage AI and NLP to process and generate
-                                human-like text efficiently.
+                    <div class="experience__highlights">
+                        <div class="experience__highlight-item">
+                            <h4 class="experience__highlight-title">▸ Agent Mart Studio</h4>
+                            <p class="experience__highlight-desc">
+                                Microsoft Fabric native workload, live on Azure Marketplace. Built as a 2-person team, featured on the Microsoft Fabric Blog.
                             </p>
-
-                            <ul class="services__modal-list">
-                                <li class="services__modal-item">
-                                    <i class='bx bx-check-circle'></i>
-                                    <p class="services__modal-info">
-                                        Building and integrating AI models like GPT-4, LLaMA 2, and Gemini for chatbots,
-                                        text enhancement, and translation.
-                                    </p>
-                                </li>
-
-                                <li class="services__modal-item">
-                                    <i class='bx bx-check-circle'></i>
-                                    <p class="services__modal-info">
-                                        Implementing Natural Language Processing techniques such as Named Entity
-                                        Recognition (NER), sentiment analysis, and text classification.
-                                    </p>
-                                </li>
-
-                                <li class="services__modal-item">
-                                    <i class='bx bx-check-circle'></i>
-                                    <p class="services__modal-info">
-                                        Speech and text processing with technologies like gSTT (Google Speech-to-Text),
-                                        gTTS (Google Text-to-Speech), and handwriting recognition.
-                                    </p>
-                                </li>
-                            </ul>
                         </div>
-                    </div>
-                </div>
 
-                <div class="services__card">
-                    <h3 class="services__title">Problem Solving</h3>
-
-                    <span class="services__button">
-                        See More <i class='bx bx-right-arrow services__icon'></i>
-                    </span>
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <i class='bx bx-x services__modal-close'></i>
-
-                            <h3 class="services__modal-title">Problem Solving</h3>
-
-                            <p class="services__modal-description">
-                                I possess strong analytical skills and a problem-solving mindset to overcome challenges
-                                and deliver efficient solutions.
+                        <div class="experience__highlight-item">
+                            <h4 class="experience__highlight-title">▸ Data Lake Accelerator</h4>
+                            <p class="experience__highlight-desc">
+                                11-module enterprise platform connecting SAP, Oracle, D365, and Salesforce to Databricks, Snowflake, and Microsoft Fabric. Owned React + Vite frontend and all FastAPI backend services. Deployed for Fortune 500 clients: Heritage Groceries, Advanced Energies.
                             </p>
+                        </div>
 
-                            <ul class="services__modal-list">
-                                <li class="services__modal-item">
-                                    <i class='bx bx-check-circle'></i>
-                                    <p class="services__modal-info">
-                                        Debugging and troubleshooting.
-                                    </p>
-                                </li>
+                        <div class="experience__highlight-item">
+                            <h4 class="experience__highlight-title">▸ AI Chatbot</h4>
+                            <p class="experience__highlight-desc">
+                                Real-time WebSocket + Azure OpenAI + CosmosDB vector store. Natural language querying of enterprise data. Zero SQL required.
+                            </p>
+                        </div>
 
-                                <li class="services__modal-item">
-                                    <i class='bx bx-check-circle'></i>
-                                    <p class="services__modal-info">
-                                        Algorithmic thinking.
-                                    </p>
-                                </li>
-
-                                <li class="services__modal-item">
-                                    <i class='bx bx-check-circle'></i>
-                                    <p class="services__modal-info">
-                                        Attention to detail.
-                                    </p>
-                                </li>
-                            </ul>
+                        <div class="experience__highlight-item">
+                            <h4 class="experience__highlight-title">▸ LLM Engineering</h4>
+                            <p class="experience__highlight-desc">
+                                Automated ETL code generation (PySpark, PySQL), schema mapping, and AI-generated business recommendations via Azure OpenAI.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-
-        <!--=============== WORK ===============-->
+        <!--=============== PROJECTS ===============-->
         <section class="work section" id="work">
-            <span class="section__subtitle">My Portfolio</span>
-            <h2 class="section__title">Recent Works</h2>
-
-            <div class="work__filters">
-                <span class="work__item active-work" data-filter='all'>All</span>
-                <span class=" work__item" data-filter='.web'>Web</span>
-                <span class=" work__item" data-filter='.movil'>Front-End</span>
-                <span class=" work__item" data-filter='.design'>Other</span>
-            </div>
-
-
+            <span class="section__subtitle">What I've Built</span>
+            <h2 class="section__title">Projects I've Built</h2>
 
             <div class="work__container container grid">
-                <div class="work__card mix web movil">
-                    <div class="work__img-container">
-                        <img src="assets/img/mediscan.png" alt="dairy" class="work__img">
-                    </div>
 
-                    <h3 class="work__title">MediScan - Medical Report Summary with Chat Application</h3>
-
-                    <div class="work__button-container">
-                        <a href="https://github.com/Dhruva1129/MediScan" class="work__button">
-                            GitHub <i class='bx bx-right-arrow work__icon'></i>
-                        </a>
-                        <a href="https://mediscan-chi.vercel.app/" class="work__button">
-                            View <i class='bx bx-right-arrow work__icon'></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- <div class="work__card mix web movil">
-                    <img src="assets/img/temp.jpg" alt="dairy" class="work__img">
-
-                    <h3 class="work__title">Tourist Behavior Using Big Data Technology</h3>
-
-                    <a href="https://github.com/Dhruva1129/minor-project" class="work__button">
-                        GitHub <i class='bx bx-right-arrow work__icon'></i>
-                    </a>
-                </div> -->
-
+                <!-- MediScan -->
                 <div class="work__card mix web">
                     <div class="work__img-container">
-                        <img src="assets/img/Ecommerce.jpeg" alt="" class="work__img">
+                        <img src="assets/img/mediscan.png" alt="MediScan" class="work__img">
                     </div>
 
-                    <h3 class="work__title">Electronic's E-Commerce</h3>
+                    <div class="work__badge">🏥</div>
+                    <h3 class="work__title">MediScan</h3>
+                    <p class="work__subtitle">AI-Powered Medical Report Intelligence Platform</p>
+                    <p class="work__description">
+                        Upload any medical report — lab test, scan, prescription, or discharge summary — and get an instant AI-powered analysis in plain language. Generates 4 structured outputs per report: Summary → Risk Analysis → Next Steps → Questions to Ask Your Doctor. Followed by a conversational chat session tied to the report.
+                    </p>
+                    <div class="work__stack-tags">
+                        <span class="work__tag">Python</span>
+                        <span class="work__tag">FastAPI</span>
+                        <span class="work__tag">PostgreSQL</span>
+                        <span class="work__tag">Meta Llama 4</span>
+                        <span class="work__tag">Groq</span>
+                        <span class="work__tag">React 18</span>
+                        <span class="work__tag">Vite</span>
+                    </div>
 
                     <div class="work__button-container">
-                        <a href="https://github.com/Dhruva1129/ey-final-project" class="work__button">
-                            GitHub <i class='bx bx-right-arrow work__icon'></i>
+                        <a href="https://mediscan-chi.vercel.app/" target="_blank" class="button work__cta-button">
+                            Live Demo <i class='bx bx-right-arrow'></i>
                         </a>
-                        <a href="https://ey-final-project-vn8o.vercel.app/" class="work__button">
-                            View <i class='bx bx-right-arrow work__icon'></i>
+                        <a href="https://github.com/Dhruva1129/MediScan" target="_blank" class="work__button">
+                            GitHub <i class='bx bxl-github'></i>
                         </a>
                     </div>
                 </div>
 
+                <!-- AskMyDocs -->
+                <div class="work__card mix web">
+                    <div class="work__img-container">
+                        <img src="assets/img/askmydocs.png" alt="AskMyDocs" class="work__img">
+                    </div>
+
+                    <div class="work__badge">🔐</div>
+                    <h3 class="work__title">AskMyDocs</h3>
+                    <p class="work__subtitle">Secure Enterprise RAG System with RBAC</p>
+                    <p class="work__description">
+                        Enterprise document Q&A — where the same question gives different answers depending on who's asking. Upload company documents. Every query is permission-gated: Admin · HR · Finance · Manager · Developer · Employee — each role sees only what they're authorized to see. Features real-time PII masking, prompt injection detection, hybrid search (ChromaDB + BM25 + RRF), cross-encoder reranking, and citation validation.
+                    </p>
+                    <div class="work__stack-tags">
+                        <span class="work__tag">FastAPI</span>
+                        <span class="work__tag">JWT Auth</span>
+                        <span class="work__tag">ChromaDB</span>
+                        <span class="work__tag">BM25</span>
+                        <span class="work__tag">RBAC</span>
+                        <span class="work__tag">Groq</span>
+                        <span class="work__tag">PostgreSQL</span>
+                    </div>
+
+                    <div class="work__button-container">
+                        <a href="https://github.com/Dhruva1129" target="_blank" class="work__button">
+                            GitHub <i class='bx bxl-github'></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Electronic's E-Commerce -->
+                <div class="work__card mix web">
+                    <div class="work__img-container">
+                        <img src="assets/img/Ecommerce.jpeg" alt="E-Commerce Application" class="work__img">
+                    </div>
+
+                    <div class="work__badge">🛒</div>
+                    <h3 class="work__title">Electronic's E-Commerce</h3>
+                    <p class="work__subtitle">Full-Stack MERN App · @ EY GDS Next Gen</p>
+                    <p class="work__description">
+                        Developed a full-stack eCommerce web application during an internship at EY GDS in collaboration with Edunet Foundation. Implemented core eCommerce functionalities including product listing, cart management, order processing, and user management. Built secure JWT authentication and role-based access control, following industry best practices for REST API design and performance optimization.
+                    </p>
+                    <div class="work__stack-tags">
+                        <span class="work__tag">React.js</span>
+                        <span class="work__tag">Node.js</span>
+                        <span class="work__tag">Express</span>
+                        <span class="work__tag">MongoDB</span>
+                        <span class="work__tag">JWT Auth</span>
+                        <span class="work__tag">REST APIs</span>
+                    </div>
+
+                    <div class="work__button-container">
+                        <a href="https://github.com/Dhruva1129/ey-final-project" target="_blank" class="work__button">
+                            GitHub <i class='bx bxl-github'></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Text Enhancer -->
                 <div class="work__card mix design">
                     <div class="work__img-container">
-                        <img src="assets/img/text-enh.jpeg" alt="" class="work__img">
+                        <img src="assets/img/text-enh.jpeg" alt="Text Enhancer" class="work__img">
                     </div>
 
+                    <div class="work__badge">✍️</div>
                     <h3 class="work__title">Text Enhancer</h3>
+                    <p class="work__subtitle">AI Text Processing App</p>
+                    <p class="work__description">
+                        A web application that enhances and modifies text using AI. Features a clean interface for users to input text and receive improved versions effortlessly.
+                    </p>
+                    <div class="work__stack-tags">
+                        <span class="work__tag">HTML</span>
+                        <span class="work__tag">CSS</span>
+                        <span class="work__tag">JavaScript</span>
+                        <span class="work__tag">AI</span>
+                    </div>
 
                     <div class="work__button-container">
-                        <a href="https://github.com/Dhruva1129/ai-text-enhancer" class="work__button">
-                            GitHub <i class='bx bx-right-arrow work__icon'></i>
+                        <a href="https://github.com/Dhruva1129/ai-text-enhancer" target="_blank" class="work__button">
+                            GitHub <i class='bx bxl-github'></i>
                         </a>
-                        <a href="https://text-enhancer-ten.vercel.app/" class="work__button">
-                            View <i class='bx bx-right-arrow work__icon'></i>
+                        <a href="https://text-enhancer-ten.vercel.app/" target="_blank" class="work__button">
+                            View Live <i class='bx bx-right-arrow'></i>
                         </a>
                     </div>
                 </div>
 
+                <!-- E-Commerce Shoe Website -->
                 <div class="work__card mix web movil">
                     <div class="work__img-container">
-                        <img src="assets/img/shoe.jpg" alt="" class="work__img">
+                        <img src="assets/img/shoe.jpg" alt="Shoe Website" class="work__img">
                     </div>
 
+                    <div class="work__badge">👟</div>
                     <h3 class="work__title">E-Commerce Shoe Website</h3>
+                    <p class="work__subtitle">Frontend E-Commerce UI</p>
+                    <p class="work__description">
+                        A responsive frontend interface for an e-commerce shoe store, featuring modern web design principles and interactive product showcases.
+                    </p>
+                    <div class="work__stack-tags">
+                        <span class="work__tag">HTML</span>
+                        <span class="work__tag">CSS</span>
+                        <span class="work__tag">JavaScript</span>
+                    </div>
 
                     <div class="work__button-container">
-                        <a href="https://dhruva1129.github.io/real-time-project/index.html" class="work__button">
-                            GitHub <i class='bx bx-right-arrow work__icon'></i>
+                        <a href="https://dhruva1129.github.io/real-time-project/index.html" target="_blank" class="work__button">
+                            View Live <i class='bx bx-right-arrow'></i>
                         </a>
                     </div>
                 </div>
 
+                <!-- Temperature Converter -->
                 <div class="work__card mix web movil">
                     <div class="work__img-container">
-                        <img src="assets/img/temp.jpg" alt="dairy" class="work__img">
+                        <img src="assets/img/temp.jpg" alt="Temperature Converter" class="work__img">
                     </div>
 
+                    <div class="work__badge">🌡️</div>
                     <h3 class="work__title">Temperature Converter</h3>
+                    <p class="work__subtitle">Web Utility App</p>
+                    <p class="work__description">
+                        A simple and interactive web utility application designed to convert temperatures between Celsius, Fahrenheit, and Kelvin seamlessly.
+                    </p>
+                    <div class="work__stack-tags">
+                        <span class="work__tag">HTML</span>
+                        <span class="work__tag">CSS</span>
+                        <span class="work__tag">JavaScript</span>
+                    </div>
 
                     <div class="work__button-container">
-                        <a href="https://github.com/Dhruva1129/OIBSIP/tree/main/task-3" class="work__button">
-                            GitHub <i class='bx bx-right-arrow work__icon'></i>
+                        <a href="https://github.com/Dhruva1129/OIBSIP/tree/main/task-3" target="_blank" class="work__button">
+                            GitHub <i class='bx bxl-github'></i>
                         </a>
                     </div>
                 </div>
-
-                <div class="work__card mix movil">
-                    <div class="work__img-container">
-                        <img src="assets/img/portfolio.jpg" alt="" class="work__img">
-                    </div>
-
-                    <h3 class="work__title">Portfolio</h3>
-
-                    <div class="work__button-container">
-                        <a href="#" class="work__button">
-                            GitHub <i class='bx bx-right-arrow work__icon'></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- <div class="work__card mix movil">
-                    <img src="assets/img/calc.jpg" alt="" class="work__img">
-
-                    <h3 class="work__title">Calculator</h3>
-
-                    <a href="https://kyatramonirakesh.github.io/Calculator/" class="work__button">
-                        Demo <i class='bx bx-right-arrow work__icon'></i>
-                    </a>
-                </div> -->
-
-                <!-- <div class="work__card mix movil">
-                    <img src="assets/img/Login.png" alt="" class="work__img">
-
-                    <h3 class="work__title">Login & Signup Page</h3>
-
-                    <a href="https://github.com/KyatramoniRakesh/Login-SignUp-Page" class="work__button">
-                        Demo <i class='bx bx-right-arrow work__icon'></i>
-                    </a>
-                </div> -->
 
             </div>
         </section>
 
+        <!--=============== SKILLS / TECH STACK ===============-->
+        <section class="skills section" id="skills">
+            <span class="section__subtitle">My Abilities</span>
+            <h2 class="section__title">Tech Stack</h2>
 
+            <div class="skills__rows container">
+
+                <div class="skills__row">
+                    <span class="skills__category">Languages</span>
+                    <div class="skills__pills">
+                        <span class="skills__pill">Python</span>
+                        <span class="skills__pill">JavaScript</span>
+                        <span class="skills__pill">SQL</span>
+                        <span class="skills__pill">C</span>
+                    </div>
+                </div>
+
+                <div class="skills__row">
+                    <span class="skills__category">Frontend</span>
+                    <div class="skills__pills">
+                        <span class="skills__pill">React.js</span>
+                        <span class="skills__pill">Vite</span>
+                        <span class="skills__pill">HTML</span>
+                        <span class="skills__pill">CSS</span>
+                    </div>
+                </div>
+
+                <div class="skills__row">
+                    <span class="skills__category">Backend</span>
+                    <div class="skills__pills">
+                        <span class="skills__pill">FastAPI</span>
+                        <span class="skills__pill">Node.js</span>
+                        <span class="skills__pill">Flask</span>
+                        <span class="skills__pill">REST APIs</span>
+                        <span class="skills__pill">WebSocket</span>
+                    </div>
+                </div>
+
+                <div class="skills__row">
+                    <span class="skills__category">AI / ML</span>
+                    <div class="skills__pills">
+                        <span class="skills__pill skills__pill--accent">Azure OpenAI</span>
+                        <span class="skills__pill skills__pill--accent">Groq</span>
+                        <span class="skills__pill skills__pill--accent">RAG</span>
+                        <span class="skills__pill skills__pill--accent">Vector Search</span>
+                        <span class="skills__pill skills__pill--accent">ChromaDB</span>
+                        <span class="skills__pill skills__pill--accent">CosmosDB</span>
+                        <span class="skills__pill skills__pill--accent">LLM Integration</span>
+                        <span class="skills__pill skills__pill--accent">Prompt Engineering</span>
+                    </div>
+                </div>
+
+                <div class="skills__row">
+                    <span class="skills__category">Databases</span>
+                    <div class="skills__pills">
+                        <span class="skills__pill">PostgreSQL</span>
+                        <span class="skills__pill">CosmosDB</span>
+                        <span class="skills__pill">MongoDB</span>
+                        <span class="skills__pill">ChromaDB</span>
+                    </div>
+                </div>
+
+                <div class="skills__row">
+                    <span class="skills__category">Cloud & Infra</span>
+                    <div class="skills__pills">
+                        <span class="skills__pill">Microsoft Azure</span>
+                        <span class="skills__pill">Databricks</span>
+                        <span class="skills__pill">Snowflake</span>
+                        <span class="skills__pill">Microsoft Fabric</span>
+                        <span class="skills__pill">Docker</span>
+                        <span class="skills__pill">CI/CD</span>
+                        <span class="skills__pill">Git</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
 
         <!--=============== EDUCATION ===============-->
-        <section class="education section ">
-            <span class="section__subtitle">Education</span>
-            <h2 class="section__title">Qualifications</h2>
+        <section class="education section" id="education">
+            <span class="section__subtitle">My Journey</span>
+            <h2 class="section__title">Education</h2>
             <div class="testimonial__container container">
                 <div class="row">
-                    <div class=" education__card">
+                    <div class="education__card">
                         <div class="col-md-4">
                             <div class="edu_img">
-                                <img src="assets/img/college.png" alt="CLG_img">
+                                <img src="assets/img/college.png" alt="Vaagdevi College">
                             </div>
                         </div>
                         <div class="col-md-8">
                             <div class="edu_info">
-                                <h3 class="testimonial__name education__title">Bachelor of Technology in Computer
-                                    Science and Engineering [AI & ML]</h3>
-                                <p class="testimonial__description education__info">July 2023 – May 2026</p>
-                                <p class="testimonial__description education__info">Vaagdevi College Of Engineering,
-                                    Warangal, Telangana</p>
-                                <p class="testimonial__description education__info">CGPA – 8.18</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=" education__card">
-                        <div class="col-md-4">
-                            <div class="edu_img">
-                                <img src="assets/img/vmr.jpeg" alt="CLG_img" style="border-radius: 30%;">
-                            </div>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="edu_info">
-                                <h3 class="testimonial__name education__title">Diploma in Electrical and Electronics
-                                    Engineering</h3>
-                                <p class="testimonial__description education__info">July 2020 – May 2023</p>
-                                <p class="testimonial__description education__info">VMR Polytechnic College, Rampur,
-                                    Warangal</p>
-                                <p class="testimonial__description education__info">CGPA – 9.2</p>
+                                <h3 class="testimonial__name education__title">B.Tech — Computer Science & Engineering (AI & ML)</h3>
+                                <p class="testimonial__description education__info">Vaagdevi College of Engineering</p>
+                                <p class="testimonial__description education__info">2023 – 2026 · CGPA: 8.18 / 10</p>
+                                <p class="testimonial__description education__extra">
+                                    Completed degree while working full-time remotely at Lucid Data+AI Hub (Canada) from the final year onward — shipping production products alongside coursework.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -774,82 +540,89 @@
                     <div class="education__card">
                         <div class="col-md-4">
                             <div class="edu_img">
-                                <img src="assets/img/school.png" alt="CLG_img">
+                                <img src="assets/img/vmr.jpeg" alt="VMR Polytechnic" style="border-radius: 30%;">
                             </div>
                         </div>
                         <div class="col-md-8">
                             <div class="edu_info">
-                                <h3 class="testimonial__name education__title">The Board of Secondary Education</h3>
-                                <p class="testimonial__description education__info">June 2019 – May 2020</p>
-                                <p class="testimonial__description education__info">Sahasra Concept School,
-                                    Chinnapendyal, Warangal</p>
-                                <p class="testimonial__description education__info">CGPA – 10.0</p>
+                                <h3 class="testimonial__name education__title">Diploma — Electrical & Electronics Engineering</h3>
+                                <p class="testimonial__description education__info">VMR Polytechnic College</p>
+                                <p class="testimonial__description education__info">2020 – 2023 · Grade: 9.2 / 10</p>
                             </div>
                         </div>
                     </div>
-
                 </div>
-
-            </div>
-
-
-            </div>
-
             </div>
         </section>
 
-
-
-
-
         <!--=============== CONTACT ===============-->
         <section class="contact section" id="contact">
-            <sapn class="section__subtitle">Get in touch</sapn>
-            <h3 class="section__title">Contact Me</h3>
+            <span class="section__subtitle">Get in touch</span>
+            <h2 class="section__title">Let's Work Together</h2>
+
+            <div class="contact__looking-for">
+                <p class="contact__roles">
+                    I'm actively looking for full-time roles in:<br>
+                    <strong>AI Engineering · Full Stack Development · ML Engineering</strong>
+                </p>
+                <p class="contact__locations">
+                    Remote · Hybrid · On-site<br>
+                    Hyderabad · Bangalore · Pune · Open to Relocation
+                </p>
+            </div>
 
             <div class="contact__container container grid">
                 <div class="contact__content">
-                    <h3 class="contact__title contact__title-info">Talk to me</h3>
+                    <h3 class="contact__title contact__title-info">Reach Out</h3>
 
                     <div class="contact__info">
                         <div class="contact__card">
                             <i class='bx bx-mail-send contact__card-icon'></i>
                             <h3 class="contact__card-title">Email</h3>
-                            <span class="contact__card-data">dhruvatejaamancha29@gmail.com</span>
+                            <span class="contact__card-data">dhruvatejaamancha28@gmail.com</span>
 
-                            <a href="mailto:example@domain.com" target="_blank" class="contact__button">
-                                Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
-                            </a>
-                        </div>
-
-                        <div class="contact__card">
-                            <i class='bx bxl-whatsapp contact__card-icon'></i>
-                            <h3 class="contact__card-title">Whatsapp</h3>
-                            <span class="contact__card-data">+91 7075790874</span>
-
-                            <a href="https://api.whatsapp.com/send?phone=+917075790874&text=Hey there!" target="_blank"
-                                class="contact__button">
-                                Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
+                            <a href="mailto:dhruvatejaamancha28@gmail.com" target="_blank" class="contact__button">
+                                Send Email <i class='bx bx-right-arrow contact__button-icon'></i>
                             </a>
                         </div>
 
                         <div class="contact__card">
                             <i class='bx bxl-linkedin contact__card-icon'></i>
-                            <h3 class="contact__card-title">Linkedin</h3>
-                            <span class="contact__card-data">Dhruvateja Amancha</span>
+                            <h3 class="contact__card-title">LinkedIn</h3>
+                            <span class="contact__card-data">dhruvateja-amancha</span>
 
-                            <a href="https://www.linkedin.com/in/dhruvateja-amancha-80a24527b/" target="_blank"
+                            <a href="https://www.linkedin.com/in/dhruvateja-amancha/" target="_blank"
                                 class="contact__button">
-                                Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
+                                Connect <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class='bx bxl-github contact__card-icon'></i>
+                            <h3 class="contact__card-title">GitHub</h3>
+                            <span class="contact__card-data">Dhruva1129</span>
+
+                            <a href="https://github.com/Dhruva1129" target="_blank" class="contact__button">
+                                View Profile <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class='bx bx-globe contact__card-icon'></i>
+                            <h3 class="contact__card-title">Website</h3>
+                            <span class="contact__card-data">dhruvateja.me</span>
+
+                            <a href="https://dhruvateja.me" target="_blank" class="contact__button">
+                                Visit <i class='bx bx-right-arrow contact__button-icon'></i>
                             </a>
                         </div>
                     </div>
                 </div>
 
                 <div class="contact__content">
-                    <h3 class="contact__title contact__title-form">Write Me your Message</h3>
+                    <h3 class="contact__title contact__title-form">Send Me a Message</h3>
 
-                    <form action="https://formsubmit.co/dhruvatejaamancha29@gmail.com" method="POST"
+                    <form action="https://formsubmit.co/dhruvatejaamancha28@gmail.com" method="POST"
                         class="contact__form">
                         <div class="contact__form-div">
                             <label for="name" class="contact__form-tag">Name</label>
@@ -868,14 +641,26 @@
                             <textarea id="message" name="message" cols="30" rows="10" placeholder="Write your Message"
                                 class="contact__form-input" required></textarea>
                         </div>
-                        <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+                        <input type="hidden" name="_next" value="https://dhruvateja.me">
                         <input type="hidden" name="_captcha" value="false">
                         <button type="submit" class="button">Send Message</button>
                     </form>
-
-
                 </div>
+            </div>
 
+            <div class="contact__cta-buttons">
+                <a href="mailto:dhruvatejaamancha28@gmail.com" class="button">
+                    <i class='bx bx-mail-send'></i> Send Email
+                </a>
+                <a href="https://www.linkedin.com/in/dhruvateja-amancha/" target="_blank" class="button button--ghost">
+                    <i class='bx bxl-linkedin'></i> LinkedIn
+                </a>
+                <a download=""
+                    href="https://drive.google.com/file/d/1ZosELv6BdxQKcBqhWka-uY1Ns5RWkRlN/view?usp=sharing"
+                    class="button button--ghost">
+                    <i class='bx bx-download'></i> Download Resume
+                </a>
+            </div>
         </section>
     </main>
 
@@ -885,7 +670,6 @@
             <h1 class="footer__title">Dhruvateja Amancha</h1>
 
             <ul class="footer__list">
-
                 <li class="footer__item">
                     <a href="#" class="footer__link">Home</a>
                 </li>
@@ -893,10 +677,13 @@
                     <a href="#about" class="footer__link">About</a>
                 </li>
                 <li class="footer__item">
-                    <a href="#skills" class="footer__link">Skills</a>
+                    <a href="#experience" class="footer__link">Experience</a>
                 </li>
                 <li class="footer__item">
-                    <a href="#work" class="footer__link">Work</a>
+                    <a href="#work" class="footer__link">Projects</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#skills" class="footer__link">Skills</a>
                 </li>
                 <li class="footer__item">
                     <a href="#contact" class="footer__link">Contact</a>
@@ -915,59 +702,27 @@
                     </a>
                 </li>
                 <li class="footer__social-item">
-                    <a href="https://www.linkedin.com/in/dhruvateja-amancha-80a24527b/" target="_blank"
+                    <a href="https://www.linkedin.com/in/dhruvateja-amancha/" target="_blank"
                         class="footer__social-link">
                         <i class='bx bxl-linkedin footer__social-icon'></i>
-                    </a>
-                </li>
-                <li class="footer__social-item">
-                    <a href="https://www.instagram.com/dhruvateja_/" target="_blank" class="footer__social-link">
-                        <i class='bx bxl-instagram footer__social-icon'></i>
                     </a>
                 </li>
             </ul>
 
             <span class="footer__copy">
-                &#169; 2024 Dhruv. All rights reserved.
+                &#169; 2026 Dhruvateja Amancha. All rights reserved.
             </span>
         </div>
     </footer>
 
     <!--=============== SCROLLREVEAL ===============-->
-
-    <!-- <script src="assets/js/scrollreveal.min.js"></script> -->
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
-    <!--=============== SWIPER JS ===============-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
-
-    <!--=============== MIXITUP FILTER ===============-->
-    <script src="assets/js/mixitup.min.js"></script>
-
     <!--=============== MAIN JS ===============-->
-    <style>
-        .see-more-btn {
-            background: none;
-            border: none;
-            color: inherit;
-            font: inherit;
-            padding: 0;
-            margin-top: 10px;
-            cursor: pointer;
-            text-decoration: underline;
-            transition: color 0.2s;
-        }
-
-        .see-more-btn:hover,
-        .see-more-btn:focus {
-            color: #6c63ff;
-            outline: none;
-        }
-    </style>
     <script src="assets/js/main.js"></script>
-    <script>
-    </script>
-    </script>
+
+    <!--=============== BACKGROUND ANIMATION JS ===============-->
+    <script src="assets/js/canvas.js"></script>
 </body>
 
 </html>
