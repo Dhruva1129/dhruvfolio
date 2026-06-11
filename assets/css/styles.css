@@ -635,8 +635,7 @@ body.light-theme {
   display: flex;
   flex-direction: column;
   gap: 0;
-  max-width: 800px;
-  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 .skills__row {
